@@ -1,5 +1,3 @@
-import React from 'react'
-
 function Rectangle() {
   const widthRec = 7
   const heightRec = 5
