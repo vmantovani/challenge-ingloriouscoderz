@@ -1,8 +1,5 @@
-# React + Vite
+# Rectangle using * with JS (React/Vite)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Challenge given by Matteo (Inglorious Coderz) to make a rectangle using JS as the image below:
 
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+<img width="82" alt="Screen Shot 2023-09-16 at 06 59 35" src="https://github.com/vmantovani/challenge-ingloriouscoderz/assets/7454102/fb3f63a6-241d-4fb2-b456-12cf344c4d0f">
