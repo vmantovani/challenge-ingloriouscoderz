@@ -1,10 +1,13 @@
 import Rectangle from './Components/Rectangle'
+import Triangle from './Components/Triangle'
+import './Styles/App.css'
 
 const App = () => {
   return (
     <div>
-      <div>
+      <div className="container">
         <Rectangle />
+        <Triangle />
       </div>
     </div>
   )
