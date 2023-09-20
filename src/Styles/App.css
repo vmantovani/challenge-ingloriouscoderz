@@ -1,6 +1,12 @@
 .container {
   display: flex;
   justify-content: center;
-  gap: 15rem;
-  margin-top: 5rem;
+  margin-top: 40px;
+  height: 100vh;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 100px;
 }

@@ -1,17 +1,16 @@
-function drawTriangle(heightTri) {
-  const triangle = []
-
-  for (let i = 1; i <= heightTri; i++) {
-    triangle.push('*'.repeat(i))
-  }
-
-  return triangle.map((line, index) => <div key={index}>{line}</div>)
-}
+import { createFullLine } from '../Utils/shapeUtils'
 
 const Triangle = () => {
   const heightTri = 5
+  const character = '*'
 
-  return <div>{drawTriangle(heightTri)}</div>
+  const triangle = []
+
+  for (let i = 1; i <= heightTri; i++) {
+    triangle.push(createFullLine(i, character))
+  }
+
+  return triangle.map((line, index) => <div key={index}>{line}</div>)
 }
 
 export default Triangle

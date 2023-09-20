@@ -6,8 +6,14 @@ const App = () => {
   return (
     <div>
       <div className="container">
-        <Rectangle />
-        <Triangle />
+        <div className="grid">
+          <div>
+            <Rectangle />
+          </div>
+          <div>
+            <Triangle />
+          </div>
+        </div>
       </div>
     </div>
   )
