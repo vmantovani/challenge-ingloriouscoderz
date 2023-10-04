@@ -1,16 +1,16 @@
 import { createFullLine } from '../Utils/shapeUtils'
-
 const Triangle = () => {
   const heightTri = 5
   const character = '*'
 
-  const triangle = []
+  let triangle = ''
 
   for (let i = 1; i <= heightTri; i++) {
-    triangle.push(createFullLine(i, character))
+    const line = createFullLine(i, character)
+    triangle += line + '\n'
   }
 
-  return triangle.map((line, index) => <div key={index}>{line}</div>)
+  return triangle
 }
 
 export default Triangle

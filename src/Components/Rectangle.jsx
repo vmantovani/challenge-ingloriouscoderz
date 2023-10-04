@@ -5,17 +5,20 @@ const Rectangle = () => {
   const heightRec = 5
   const character = '*'
 
-  const rectangle = []
+  let rectangle = ''
 
-  rectangle.push(createFullLine(widthRec, character))
+  // Create a full line on the top of the rectangle
+  rectangle += createFullLine(widthRec, character) + '\n'
 
   for (let i = 1; i < heightRec - 1; i++) {
-    rectangle.push(createInnerLine(widthRec, character))
+    // Internal lines with blank space
+    rectangle += createInnerLine(widthRec, character) + '\n'
   }
 
-  rectangle.push(createFullLine(widthRec, character))
+  // Create a full line on the bottom of the rectangle
+  rectangle += createFullLine(widthRec, character)
 
-  return rectangle.map((line, index) => <div key={index}>{line}</div>)
+  return rectangle
 }
 
 export default Rectangle
